@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.bai.com.my360.ui.WelcomeActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/welcome_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+    <RadioGroup
+       android:id="@+id/welcome_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+        <RadioButton
+            android:id="@+id/welcome_button1"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:checked="true"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/welcometop"
+            />
+        <RadioButton
+            android:id="@+id/welcome_button2"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/welcometop"
+            />
+        <RadioButton
+
+            android:id="@+id/welcome_button3"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/welcometop"
+            />
+        <RadioButton
+            android:id="@+id/welcome_button4"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:background="@drawable/welcometop"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>

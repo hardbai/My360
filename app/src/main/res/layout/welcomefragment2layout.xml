@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <ImageView
+        android:id="@+id/logo_360"
+        android:layout_marginTop="53dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gg"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续使用代表您："
+        android:layout_below="@+id/logo_360"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/logo_360"
+        android:textColor="#DDDDDD"/>
+    <TextView
+        android:id="@+id/welcome_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已经同意并阅读《安装许可协议》"
+        android:layout_below="@+id/welcome_title"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/logo_360"
+        android:textColor="#DDDDDD"/>
+    <TextView
+        android:id="@+id/welcome_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已经同意并阅读《隐私保护白皮书》"
+        android:layout_below="@+id/welcome_content1"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/logo_360"
+        android:textColor="#DDDDDD"/>
+    <CheckBox
+        android:layout_alignLeft="@id/logo_360"
+        android:layout_below="@id/welcome_content2"
+        android:id="@+id/cb_open_auto_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="允许自动开启超强模式" />
+
+    <CheckBox
+        android:layout_alignLeft="@id/logo_360"
+        android:layout_below="@id/cb_open_auto_mode"
+        android:id="@+id/cb_prove_plane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="参加用户体验改进计划" />
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/goContent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cb_prove_plane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:background="#00FF00"
+        android:text="同意并使用"/>
+
+
+
+</RelativeLayout>
